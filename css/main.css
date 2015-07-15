@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+
+
+body {
+	font-family: "Roboto Slab", sans-serif;
+  	font-weight: 300;
+  	font-size: 1.5em;
+  	/** This pos rel is to allow ScrollSpy (navigation links/tracking) to work correctly **/
+  	position: relative;
+}
+
+
+/** Styling the hyperlinks **/
+.portfolio > a, 
+.about_me > p > a {
+  color: black;
+  text-decoration: none;
+}
+
+.portfolio > a:hover,
+.about_me > p > a:hover {
+    color: grey;
+  }
+
+
+/** Navbar **/
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #333;
+}
+
+.inbody {
+	background-color: rgba(88, 109, 116, 0.9);
+}
+
+
+/** Carousel **/
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+margin: auto;
+}
+
+
+
+/** For each page (i.e. each section of the single page site) in the Body **/
+
+.page {
+	padding: 50px 0;
+}
+
+.page h2 {
+	text-align: center;
+}
+
+/** About Me page **/
+
+.container .row .about_me {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.container .row .about_me img {
+	max-width: 200px;
+	margin-bottom: 30px;
+	-webkit-clip-path: ellipse(86px 100px at center);
+}
+
+#about_me {
+	  background-color: #8e9eab;
+}
+
+#about_me .container h2 {
+	color: white;
+}
+
+#about_me .container p {
+	color: white;
+}
+
+
+/** Portfolio page **/
+
+.container .row .portfolio {
+	text-align: center;
+	margin: 30px 0;
+}
+
+/** CV page **/
+
+.container .row .cv {
+	text-align: center;
+	margin: 30px 0;
+}
+
+#cv .container h2 {
+	color: white;
+}
+
+#cv .container p {
+	color: white;
+	margin-top: 10px;
+}
+
+#cv {
+	background-color: #586D74;
+}
+
+#cv_image {
+	max-height: 280px;			
+}
+
+/** Contact Me page **/
+
+.container .row .contact_me {
+	margin: 30px 0;
+}
+
+#contact_me .container h2 {
+	margin-bottom: 30px;
+}
+
+#contact_me {
+	background-color: #8e9eab;
+}
+
+input:focus, textarea:focus {
+    /** To give a little highlight on active elements **/
+    border-color: #000;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    background-color: #586D74;
+    border: none;
+}
+
+
+.help-block {
+	/** This is used for the contact me inputs - it's the styling for the error text **/
+	color: #B20000;
+}
+
+
+/**  Footer **/
+
+footer {
+  text-align: center;
+  background: #e7e7e7;
+  color: black;
+  font-size: .8em;
+  padding: 10px 0 5px 0;
+}
+
+
+
+
+
+
+
+
