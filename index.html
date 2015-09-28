@@ -17,6 +17,8 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-target" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
+			        <!-- The below spans create the hamburger-like icon that you see on mobile devices for the expandable/collapsable nav menu.
+			        Each span represents a line within the button. -->
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -40,11 +42,10 @@
 		<div class="carousel slide" data-ride="carousel" id="home">
     		<!-- Carousel Slides -->
     		<div class="carousel-inner">
-      			<div class="item active"><img src="img/1.jpg" alt="1"></div>
-		      	<div class="item"><img src="img/2.jpg" alt="2"></div>     
+      			<div class="item active"><img src="img/workstation.jpg" alt="Ben's Work Station"></div>  
    			</div><!-- carousel-inner -->
   
-			<!-- Carousel Controls -->
+			<!-- Commenting out carousel controls until I have more than one image 
 			<a class="left carousel-control" href="#home" role="button" data-slide="prev">
 		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
@@ -52,18 +53,18 @@
 			<a class="right carousel-control" href="#home" role="button" data-slide="next">
 			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			    <span class="sr-only">Next</span>
-			</a>
+			</a> -->
+
   		</div><!-- #home carousel slide -->
 	</header>
 
 	<div class="main">
 		<div class="page" id="about_me">
 			<div class="container">
-				<h2>About Me</h2>
 				<div class="row">
 					<div class="about_me col-md-12 col-sm-12 col-xs-12">
 						<img src="img/ben.jpg" alt="Ben Clark">
-						<p>Hello there!<br><br> I'm Ben Clark, an aspiring front end web developer developer based in London. Over the last 5 years I've worked on great IT projects as a business analyst with companies such as Capita and Lloyd's Register however recently I decided to change up in to a new career as a developer. I'm looking for an opportunity. Take a look over my CV and portfolio (see Portfolio below or <a href="https://github.com/theclarkofben?tab=repositories">Github</a>). If you like what you see then get in touch. Cheers!</p>
+						<p>Hello there!<br><br> I'm Ben Clark, an aspiring front end web developer based in London. Over the last 5 years I've worked on great IT projects as a business analyst with companies such as Capita and Lloyd's Register. Recently I decided to change up in to a new career as a developer. I'm looking for an opportunity. Take a look over my CV and portfolio (below and also <a href="https://github.com/theclarkofben?tab=repositories">Github</a>). Feel free to get in touch. Cheers!
 					</div><!-- about_me col-md-12 col-sm-12 col-xs-12 -->
 				</div><!-- row -->
 			</div><!-- container -->
@@ -74,13 +75,13 @@
 				<div class="row">
 					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
 						<a href="http://www.clarkben.com/oldclarkben/index.html"><img src="img/oldclarkben.jpg" alt="Old ClarkBen.com"></a>
-						<a href="http://www.clarkben.com/oldclarkben/index.html"><h3>Old ClarkBen.com</h3></a>
-						<p>Built from scratch using HTML/CSS/PHP but with a little touch of jQuery just to add a little animation and SASS for nice looking buttons. The mobile version of site is quite basic so make sure you check out the desktop version as well.</p>
+						<a href="http://www.clarkben.com/oldclarkben/index.html"><h3>My Old Site</h3></a>
+						<p>Built using HTML/CSS/PHP/jQuery/SASS. Responsive; simplified layout for mobiles via a media query.</p>
 					</article>
 					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
 						<a href="http://www.tarajclark.london"><img src="img/tarajclark.jpg" alt="TaraJClark.london"></a>
 						<a href="http://www.tarajclark.london"><h3>TaraJClark.london</h3></a>
-						<p>A website I made my wife Tara, who is a freelance social media specialist. Built from scratch in HTML/CSS and again I used a small amount of jQuery to give users a more interactive experience.</p>
+						<p>A site I made my wife Tara, who is a freelance social media specialist. Built using HTML/CSS/jQuery. I'm planning to re-do this soon with a new design and a mobile first approach.</p>
 					</article>
 					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
 						<a href="http://www.clarkben.com/plantgame/plantgame.html"><img src="img/plantgame.jpg" alt="Feed The Plant Game"></a>
@@ -88,10 +89,21 @@
 						<p>A fun game I made using JavaScript/CSS/HTML. Stop the plant from running out of nutrients!</p>
 					</article>
 					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/tweetsatwedding/index.html"><img src="img/weddingsocposts.jpg" alt="Wedding Media Posts"></a>
-						<a href="http://www.clarkben.com/tweetsatwedding/index.html"><h3>Wedding Social Posts</h3></a>
-						<p>A solution that displays all Twitter and Instagram posts with a particular hastag on a single page, sorted by timestamp. I found two solutions by others on Github (thanks in .js comments), worked to understand their JavaScript code and then adapted it and added to it to create the solution I wanted. There was a good amount of problem solving and proved to be a great opportunity to enhance my debugging skillset using things like Chrome's devtools.</p>
+						<a href="http://www.taraandben2015.co.uk"><img src="img/weddingsocposts.jpg" alt="Wedding Media Posts"></a>
+						<a href="http://www.taraandben2015.co.uk"><h3>Wedding Social Posts</h3></a>
+						<p>Displays all Twitter and Instagram posts filtered by hashtag and sorted by timestamp. Had very short time limit so hacked two open source solutions together. Lots of problem solving, working with callbacks for async ajax requests and was a great opportunity to enhance my debugging skillset using things like Chrome's devtools. In the near future I will re-do from the ground up using the proper OAuth APIs. Update 09/15: Something must have changed with Twitter widgets/APIs as this no longer works correctly.</p>
 					</article>
+					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
+						<a href="http://www.clarkben.com/bammshell/"><img src="img/wordpressdev.jpg" alt="WordPress Theme Dev"></a>
+						<a href="http://www.clarkben.com/bammshell/"><h3>WordPress Theme Dev</h3></a>
+						<p>I pitched for some freelance work for a graphics and photo-journalism research company. They wanted a microsite to provide client insight. Their requirements were focused on them being able to administer the site easily themselves so I proposed some bespoke WordPress theme development. I began developing in prep to start the project but sadly at the last moment my client's client withdrew funding for the project. Still... it was interesting learning some PHP and WP theme development as part of this. User 'test' and pw 'Password1' if you want to login.</p>
+					</article>
+					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
+						<a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB"><img src="img/classdirect.jpg" alt="LR's Class Direct App"></a>
+						<a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB"><h3>Class Direct App</h3></a>
+						<p>AGILE development of client facing mobile application using Oracle ADF Mobile framework. iOS and Android.</p>
+					</article>
+					
 				</div><!-- row -->
 			</div><!-- container -->
 		</div><!-- #portfolio page -->
@@ -100,7 +112,7 @@
 				<h2>CV</h2>
 				<div class="row">
 					<div class="cv col-md-12 col-sm-12 col-xs-12">
-						<a href="http://clarkben.com/CV_B_Clark.pdf?ver=1.2" target="_blank"><img id="cv_image" src="img/cv.jpg" alt="My CV"></a>
+						<a href="http://clarkben.com/CV_B_Clark.pdf?ver=1.3" target="_blank"><img id="cv_image" src="img/cv.jpg" alt="My CV"></a>
 						<p>Click for a copy.</p>
 					</div><!-- cv col-md-12 col-sm-12 col-xs-12 -->
 				</div><!-- row -->

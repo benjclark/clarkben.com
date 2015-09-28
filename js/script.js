@@ -46,9 +46,4 @@ $(function() {
     } //click function
   }); //smooth scrolling
 
-
-  $('.carousel').carousel({
-    interval: false
-  });
-
 });

@@ -10,7 +10,8 @@ body {
 }
 
 
-/** Styling the hyperlinks **/
+/** Styling all hyperlinks on site **/
+
 .portfolio > a, 
 .about_me > p > a {
   color: black;
@@ -25,9 +26,11 @@ body {
 
 /** Navbar **/
 
+
+/*By default, i.e. on mobile devices, give the navbar a dark grey background*/
 .navbar-default {
-	background-color: transparent;
 	border: none;
+	background-color: rgba(88, 109, 116, 0.9);
 }
 
 .navbar-default .navbar-nav li a,
@@ -40,12 +43,32 @@ body {
 	color: #333;
 }
 
-.inbody {
+
+
+/*If not a mobile device then give the navbar a transparent background (this turns dark grey when user scrolls down page - via scrollspy event and .inbody in JS)*/
+@media (min-width: 1441px) { 
+	.navbar-default {
+	background-color: transparent;
+	border: none;
+	}
+	/*The scrollspy event handler in script.js turns the navbar background dark grey using this class name when the user scrolls down the page*/
+	.inbody {
 	background-color: rgba(88, 109, 116, 0.9);
+	}
 }
 
 
 /** Carousel **/
+
+.carousel {
+		margin: 50px 0 0 0;
+	}
+
+@media (min-width: 1441px) { 
+	.carousel {
+		margin: 0;
+	}
+}
 
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
@@ -64,10 +87,10 @@ margin: auto;
 	text-align: center;
 }
 
-/** About Me page **/
+/** About Me **/
 
 .container .row .about_me {
-	margin: 30px 0;
+	margin: 0;
 	text-align: center;
 }
 
@@ -90,14 +113,14 @@ margin: auto;
 }
 
 
-/** Portfolio page **/
+/** Portfolio **/
 
 .container .row .portfolio {
 	text-align: center;
 	margin: 30px 0;
 }
 
-/** CV page **/
+/** CV **/
 
 .container .row .cv {
 	text-align: center;
@@ -121,7 +144,7 @@ margin: auto;
 	max-height: 280px;			
 }
 
-/** Contact Me page **/
+/** Contact Me **/
 
 .container .row .contact_me {
 	margin: 30px 0;
