@@ -9,13 +9,17 @@ body {
 }
 /** Styling all hyperlinks on site **/
 
-.portfolio > a,
-.about_me > p > a {
+.about_me a {
+    color: #fff;
+    text-decoration: underline;
+    outline: none;
+}
+
+.portfolio > a {
     color: black;
     text-decoration: none;
 }
-.portfolio > a:hover,
-.about_me > p > a:hover {
+.portfolio > a:hover {
     color: grey;
 }
 /** Navbar **/
