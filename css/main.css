@@ -12,7 +12,7 @@ body {
 
 /** Styling all hyperlinks on site **/
 
-.portfolio > a, 
+.portfolio > a,
 .about_me > p > a {
   color: black;
   text-decoration: none;
@@ -46,7 +46,7 @@ body {
 
 
 /*If not a mobile device then give the navbar a transparent background (this turns dark grey when user scrolls down page - via scrollspy event and .inbody in JS)*/
-@media (min-width: 1441px) { 
+@media (min-width: 1441px) {
 	.navbar-default {
 	background-color: transparent;
 	border: none;
@@ -58,20 +58,20 @@ body {
 }
 
 
-/** Carousel **/
+/** Image-container **/
 
-.carousel {
+.image-container {
 		margin: 50px 0 0 0;
 	}
 
-@media (min-width: 1441px) { 
-	.carousel {
+@media (min-width: 1441px) {
+	.image-container {
 		margin: 0;
 	}
 }
 
-.carousel-inner > .item > img, 
-.carousel-inner > .item > a > img{
+.image-container-inner > .item > img,
+.image-container-inner > .item > a > img{
 margin: auto;
 }
 
@@ -141,43 +141,8 @@ margin: auto;
 }
 
 #cv_image {
-	max-height: 280px;			
+	max-height: 280px;
 }
-
-/** Contact Me **/
-
-.container .row .contact_me {
-	margin: 30px 0;
-}
-
-#contact_me .container h2 {
-	margin-bottom: 30px;
-}
-
-#contact_me {
-	background-color: #8e9eab;
-}
-
-input:focus, textarea:focus {
-    /** To give a little highlight on active elements **/
-    border-color: #000;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.btn {
-    background-color: #586D74;
-    border: none;
-}
-
-
-.help-block {
-	/** This is used for the contact me inputs - it's the styling for the error text **/
-	color: #B20000;
-}
-
 
 /**  Footer **/
 
@@ -188,11 +153,3 @@ footer {
   font-size: .8em;
   padding: 10px 0 5px 0;
 }
-
-
-
-
-
-
-
-

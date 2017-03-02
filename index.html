@@ -1,208 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ben Clark</title>
-	<!-- Latest compiled and minified Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<!-- My over-riding CSS -->
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-target" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <!-- The below spans create the hamburger-like icon that you see on mobile devices for the expandable/collapsable nav menu.
-			        Each span represents a line within the button. -->
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-				    </button>
-					<a class="navbar-brand" href="#home">Ben Clark</a>	
-				</div><!-- navbar-header -->
-				
-				<div class="collapse navbar-collapse" id="navbar-collapse-target">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#home">Home</a></li>
-						<li><a href="#about_me">About Me</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#cv">CV</a></li>
-						<li><a href="#contact_me">Contact</a></li>
-					</ul>
-				</div><!-- collapse navbar-collapse" id="bs-example-navbar-collapse-1 -->	
-			</div><!-- container -->
-		</nav>
-
-		<!-- Carousel -->
-		<div class="carousel slide" data-ride="carousel" id="home">
-    		<!-- Carousel Slides -->
-    		<div class="carousel-inner">
-      			<div class="item active"><img src="img/workstation.jpg" alt="Ben's Work Station"></div>  
-   			</div><!-- carousel-inner -->
-  
-			<!-- Commenting out carousel controls until I have more than one image 
-			<a class="left carousel-control" href="#home" role="button" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-	     	</a>
-			<a class="right carousel-control" href="#home" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			</a> -->
-
-  		</div><!-- #home carousel slide -->
-	</header>
-
-	<div class="main">
-		<div class="page" id="about_me">
-			<div class="container">
-				<div class="row">
-					<div class="about_me col-md-12 col-sm-12 col-xs-12">
-						<img src="img/ben.jpg" alt="Ben Clark">
-						<p>Hello there!<br><br> I'm Ben Clark, an aspiring front end web developer based in London. Over the last 5 years I've worked on great IT projects as a business analyst with companies such as Capita and Lloyd's Register. Recently I decided to change up in to a new career as a developer. I'm looking for an opportunity. Take a look over my CV and portfolio (below and also <a href="https://github.com/theclarkofben?tab=repositories">Github</a>). Feel free to get in touch. Cheers!
-					</div><!-- about_me col-md-12 col-sm-12 col-xs-12 -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- #about_me page -->
-		<div class="page" id="portfolio">
-			<div class="container">
-				<h2>Portfolio</h2>
-				<div class="row">
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/plantgame/plantgame.html"><img src="img/plantgame.jpg" alt="Feed The Plant Game"></a>
-						<a href="http://www.clarkben.com/plantgame/plantgame.html"><h3>Feed The Plant Game</h3></a>
-						<p>A fun game I made using JavaScript/CSS/HTML. Stop the plant from running out of nutrients!</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.taraandben2015.co.uk"><img src="img/weddingsocposts.jpg" alt="Wedding Media Posts"></a>
-						<a href="http://www.taraandben2015.co.uk"><h3>Wedding Social Posts</h3></a>
-						<p>Displays all Twitter and Instagram posts filtered by hashtag and sorted by timestamp. Had very short time limit so hacked two open source solutions together. Lots of problem solving, working with callbacks for async execution and was a great opportunity to enhance my debugging skillset using things like Chrome's devtools. In the near future I will re-do from the ground up using the proper OAuth APIs. Update 09/15 - the Twitter query behind this has been updated to a hashtag that will return results. The original hashtag no longer returns results because Twitter only returns data for the last 30 days.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/instatwit/"><img src="img/instatwit.jpg" alt="InstaTwit"></a>
-						<a href="http://www.clarkben.com/instatwit/"><h3>InstaTwit</h3></a>
-						<p>Work In Progress. Re-doing the Wedding Social Posts page from the ground up with proper use of the Twitter and Instagram APIs.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/publicSearcher/"><img src="img/publicsearcher.jpg" alt="FB Public Search"></a>
-						<a href="http://www.clarkben.com/publicSearcher/"><h3>FB Public Search</h3></a>
-						<p>Work In Progress. Having a play with the Facebook Graph API. A simple page that allows a user to search for all public events, groups and pages on FB.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.tarajclark.london"><img src="img/tarajclark.jpg" alt="TaraJClark.london"></a>
-						<a href="http://www.tarajclark.london"><h3>TaraJClark.london</h3></a>
-						<p>A site I made my wife Tara, who is a freelance social media specialist. Built using HTML/CSS/jQuery. I'm planning to re-do this soon with a new design and a mobile first approach.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/bammshell/"><img src="img/wordpressdev.jpg" alt="WordPress Theme Dev"></a>
-						<a href="http://www.clarkben.com/bammshell/"><h3>WordPress Theme Dev</h3></a>
-						<p>I pitched for work. Requirements focused on the ability to administer the site easily themselves so I proposed bespoke WordPress theme development. I began developing but sadly at the last moment my client's client withdrew funding for the project. I learnt PHP and WP theme development as part of this. User 'test' and pw 'Password1' if you want to login.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="http://www.clarkben.com/oldclarkben/index.html"><img src="img/oldclarkben.jpg" alt="Old ClarkBen.com"></a>
-						<a href="http://www.clarkben.com/oldclarkben/index.html"><h3>My Old Site</h3></a>
-						<p>Built using HTML/CSS/PHP/jQuery/SASS. Responsive; simplified layout for mobiles via a media query.</p>
-					</article>
-					<article class="portfolio col-md-6 col-sm-6 col-xs-12">
-						<a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB"><img src="img/classdirect.jpg" alt="LR's Class Direct App"></a>
-						<a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB"><h3>Class Direct App</h3></a>
-						<p>I was involved in the AGILE SCRUM development of this client facing mobile application using Oracle ADF Mobile framework to deploy to both iOS and Android.
-						 I was part of the project from initiation right through to end of early life support. I gained experience with page styling, debugging and testing. I also 
-						 produced all the graphics. </p>
-					</article>
-
-
-					
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- #portfolio page -->
-		<div class="page" id="cv">
-			<div class="container">
-				<h2>CV</h2>
-				<div class="row">
-					<div class="cv col-md-12 col-sm-12 col-xs-12">
-						<a href="http://clarkben.com/CV_B_Clark.pdf?ver=1.3" target="_blank"><img id="cv_image" src="img/cv.jpg" alt="My CV"></a>
-						<p>Click for a copy.</p>
-					</div><!-- cv col-md-12 col-sm-12 col-xs-12 -->
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- #cv page -->
-		<div class="page" id="contact_me">
-			<div class="container">
-				<h2>Contact Me</h2>
-				<div class="row">
-
-	                <form class="form-horizontal" id="contactForm" novalidate="">
-	                    <fieldset>
-	                        <div class="col-md-3"></div><!-- col-md-3 -->
-	                        <div class="col-md-6">
-
-	                        	<div class="form-group">
-	                            	<div class="controls col-md-12">
-	                                	<input id="name" name="name" type="text" placeholder="Name" class="form-control" required="" data-validation-required-message="Please enter your name">
-	                            	</div><!-- controls col-md-12 -->
-	                        	</div><!-- form-group -->
-
-		                        <div class="form-group">
-		                            <div class="controls col-md-12">
-		                                <input id="email" name="email" type="text" placeholder="Email" class="form-control" required="" data-validation-required-message="Please enter your email">
-		                            </div><!-- controls col-md-12 -->
-		                        </div><!-- form-group -->
-
-		                        <div class="form-group">
-		                            <div class="controls col-md-12">
-		                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-		                            </div><!-- controls col-md-12 -->
-		                        </div><!-- form-group -->
-
-		                        <div class="form-group">
-		                            <div class="controls col-md-12">
-		                                <textarea class="form-control" id="message" name="message" placeholder="Enter Your Message Here" rows="7"></textarea>
-		                            </div><!-- controls col-md-12 -->
-		                        </div><!-- form-group -->
-
-	                        	<div class="form-group">
-	                            	<div class="col-md-12 text-center">
-	                            		<div id="success"></div>
-										<!-- For success/fail messages -->
-	                                	<button type="submit" class="btn btn-primary btn-md">Submit</button>
-	                            	</div><!-- col-md-12 -->
-	                        	</div><!-- form-group -->
-	                        </div><!-- 	col-md-6 -->
-
-	                        <div class="col-md-3"></div><!-- col-md-3 -->
-	                    </fieldset>
-	                </form>
-
-
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- #contact_me page -->
-	</div><!-- main -->
-
-	<footer>
-	  <div class="content container-fluid">
-	    <div class="row">
-	      <div class="col-sm-12">
-	        <p>All contents &copy; 2015 Ben Clark. All rights reserved.</p>    
-	      </div><!-- col-sm-6 -->
-	    </div><!-- row -->
-	  </div><!-- content container -->
-	</footer>
-
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Latest compiled and minified Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!-- The JS needed to validate and execute contact me mailing -->
-	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-	<script type="text/javascript" src="js/contact_me.js"></script>
-	<!-- The JS that helps customise the navbar and underlying scrollspy -->
-	<script src="js/script.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ben Clark</title>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- My over-riding CSS -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-target" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <!-- The below spans create the hamburger-like icon that you see on mobile devices for the expandable/collapsable nav menu.
+                                Each span represents a line within the button. -->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">Ben Clark</a>
+                    </div>
+                    <!-- navbar-header -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-target">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about_me">About Me</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#cv">CV</a></li>
+                        </ul>
+                    </div>
+                    <!-- collapse navbar-collapse" id="bs-example-navbar-collapse-1 -->
+                </div>
+                <!-- container -->
+            </nav>
+            <div class="image-container slide" data-ride="image-container" id="home">
+                <div class="image-container-inner">
+                    <div class="item active"><img src="img/workstation.jpg" alt="Ben's Work Station"></div>
+                </div>
+                <!-- image-container-inner -->
+            </div>
+        </header>
+        <div class="main">
+            <div class="page" id="about_me">
+                <div class="container">
+                    <div class="row">
+                        <div class="about_me col-md-12 col-sm-12 col-xs-12">
+                            <img src="img/ben.jpg" alt="Ben Clark">
+                            <p>Hi, I'm Ben, a London based front end developer. I look forward to work every day because I love what I do.</p>
+                        </div>
+                        <!-- about_me col-md-12 col-sm-12 col-xs-12 -->
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- #about_me page -->
+            <div class="page" id="portfolio">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                    <div class="row">
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.clarkben.com/plantgame/plantgame.html"><img src="img/plantgame.jpg" alt="Feed The Plant Game"></a>
+                            <a href="http://www.clarkben.com/plantgame/plantgame.html">
+                                <h3>Feed The Plant Game</h3>
+                            </a>
+                            <p>A fun game I made using JavaScript/CSS/HTML. Stop the plant from running out of nutrients!</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.taraandben2015.co.uk"><img src="img/weddingsocposts.jpg" alt="Wedding Media Posts"></a>
+                            <a href="http://www.taraandben2015.co.uk">
+                                <h3>Wedding Social Posts</h3>
+                            </a>
+                            <p>Displays all Twitter and Instagram posts filtered by hashtag and sorted by timestamp. Had very short time limit so hacked two open source solutions together. Lots of problem solving, working with callbacks for async execution and was a great opportunity to enhance my debugging skillset using things like Chrome's devtools. In the near future I will re-do from the ground up using the proper OAuth APIs. Update 09/15 - the Twitter query behind this has been updated to a hashtag that will return results. The original hashtag no longer returns results because Twitter only returns data for the last 30 days.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.clarkben.com/instatwit/"><img src="img/instatwit.jpg" alt="InstaTwit"></a>
+                            <a href="http://www.clarkben.com/instatwit/">
+                                <h3>InstaTwit</h3>
+                            </a>
+                            <p>Work In Progress. Re-doing the Wedding Social Posts page from the ground up with proper use of the Twitter and Instagram APIs.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.clarkben.com/publicSearcher/"><img src="img/publicsearcher.jpg" alt="FB Public Search"></a>
+                            <a href="http://www.clarkben.com/publicSearcher/">
+                                <h3>FB Public Search</h3>
+                            </a>
+                            <p>Work In Progress. Having a play with the Facebook Graph API. A simple page that allows a user to search for all public events, groups and pages on FB.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.tarajclark.london"><img src="img/tarajclark.jpg" alt="TaraJClark.london"></a>
+                            <a href="http://www.tarajclark.london">
+                                <h3>TaraJClark.london</h3>
+                            </a>
+                            <p>A site I made my wife Tara, who is a freelance social media specialist. Built using HTML/CSS/jQuery. I'm planning to re-do this soon with a new design and a mobile first approach.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.clarkben.com/bammshell/"><img src="img/wordpressdev.jpg" alt="WordPress Theme Dev"></a>
+                            <a href="http://www.clarkben.com/bammshell/">
+                                <h3>WordPress Theme Dev</h3>
+                            </a>
+                            <p>I pitched for work. Requirements focused on the ability to administer the site easily themselves so I proposed bespoke WordPress theme development. I began developing but sadly at the last moment my client's client withdrew funding for the project. I learnt PHP and WP theme development as part of this. User 'test' and pw 'Password1' if you want to login.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.clarkben.com/oldclarkben/index.html"><img src="img/oldclarkben.jpg" alt="Old ClarkBen.com"></a>
+                            <a href="http://www.clarkben.com/oldclarkben/index.html">
+                                <h3>My Old Site</h3>
+                            </a>
+                            <p>Built using HTML/CSS/PHP/jQuery/SASS. Responsive; simplified layout for mobiles via a media query.</p>
+                        </article>
+                        <article class="portfolio col-md-6 col-sm-6 col-xs-12">
+                            <a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB"><img src="img/classdirect.jpg" alt="LR's Class Direct App"></a>
+                            <a href="https://play.google.com/store/apps/details?id=org.lr.classdirect&hl=en_GB">
+                                <h3>Class Direct App</h3>
+                            </a>
+                            <p>I was involved in the AGILE SCRUM development of this client facing mobile application using Oracle ADF Mobile framework to deploy to both iOS and Android.
+                                I was part of the project from initiation right through to end of early life support. I gained experience with page styling, debugging and testing. I also
+                                produced all the graphics.
+                            </p>
+                        </article>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- #portfolio page -->
+            <div class="page" id="cv">
+                <div class="container">
+                    <h2>CV</h2>
+                    <div class="row">
+                        <div class="cv col-md-12 col-sm-12 col-xs-12">
+                            <a href="http://clarkben.com/CV_B_Clark.pdf?ver=1.3" target="_blank"><img id="cv_image" src="img/cv.jpg" alt="My CV"></a>
+                            <p>Click for a copy.</p>
+                        </div>
+                        <!-- cv col-md-12 col-sm-12 col-xs-12 -->
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- #cv page -->
+        </div>
+        <!-- main -->
+        <footer>
+            <div class="content container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>All contents &copy; 2017 Ben Clark. All rights reserved.</p>
+                    </div>
+                    <!-- col-sm-6 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- content container -->
+        </footer>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- The JS that helps customise the navbar and underlying scrollspy -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
