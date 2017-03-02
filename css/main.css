@@ -102,6 +102,10 @@ body {
     text-align: center;
     margin: 30px 0;
 }
+
+.portfolio-message {
+    text-align: center;
+}
 /** CV **/
 
 .container .row .cv {
