@@ -35,10 +35,13 @@ html {
 }
 
 .content {
-    padding: 125px 30px 30px 30px;
+    padding: 24px;
     margin: auto;
     text-align: center;
-    transform: translateY(-100px);
+
+  @include desktop {
+    transform: translateY(-60px);
+  }
 }
 
 .avatar-wrapper {
