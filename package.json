@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "sass src/styles/main.scss _site/main.css",
+    "move-images": "copyfiles -u 2 src/images/* _site/images/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "copyfiles": "^2.4.1"
+  },
+  "dependencies": {
+    "sass": "^1.41.1"
   }
 }

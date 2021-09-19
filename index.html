@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="/images/icons.svg" as="image">
     <title>Ben Clark</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
+<div class="wrapper">
+    <main class="content">
+        <div class="avatar-wrapper">
+            <picture>
+                <source type="image/avif" srcset="/images/avatar.avif">
+                <source type="image/webp" srcset="/images/avatar.webp">
+                <source type="image/jpg" srcset="/images/avatar.png">
+                <img src="/images/avatar.png" class="avatar" alt="A black and white photo of me looking at my webcam">
+            </picture>
+        </div>
+        <h1>Ben Clark</h1>
+        <p>Frontend Developer</p>
+        <nav>
+            <a href="https://twitter.com/theclarkofben">
+                <svg><use href="/images/icons.svg#icon-twitter"></use></svg>
+            </a>
+            <a href="https://github.com/benjclark">
+                <svg><use href="/images/icons.svg#icon-github"></use></svg>
+            </a>
+            <a href="mailto:hello@clarkben.com">
+                <svg><use href="/images/icons.svg#icon-email"></use></svg>
+            </a>
+        </nav>
+    </main>
+</div>
 </body>
 </html>
